@@ -1,7 +1,8 @@
 import datetime as dt
 #1.Write a Python program to subtract five days from current date.
 x = dt.datetime.now()
-print(x.day - 5)
+print(x -dt.timedelta(days=5))
+
 
 
 #2.Write a Python program to print yesterday, today, tomorrow.
