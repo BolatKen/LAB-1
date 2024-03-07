@@ -1,7 +1,15 @@
-from time import sleep
+import time
 import math
-def delay(fn, ms, *args):
-  sleep(ms / 1000)
-  return fn(*args)
-print("Square root after specific miliseconds:") 
-print(delay(lambda x: math.sqrt(x), 2123, 25100))
+
+def calculate_square_root(number, milliseconds):
+    time.sleep(milliseconds / 1000)  
+    result = math.sqrt(number)
+    return result
+
+# Sample input
+number = int(input())
+milliseconds = int(input())
+
+# Invoke square root function after specific milliseconds
+result = calculate_square_root(number, milliseconds)
+print(f"Square root of {number} after {milliseconds} milliseconds is {result}")
