@@ -6,4 +6,4 @@ def file(name):
     return counter
 
 
-print("Number of lines in the file: ", file("text.txt"))
+print("Number of lines in the file: ", file("C:\\Users\\PC\\Desktop\\Python\\lab1\\LAB6\\Dirandfiles\\text.txt"))

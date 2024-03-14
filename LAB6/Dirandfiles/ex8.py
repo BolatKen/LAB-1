@@ -1,5 +1,5 @@
 import os
-path = "C:\\Users\\PC\\Desktop\\muhammad-yunnus.jpg"
+path = r"C:\Users\PC\Desktop\Python\lab1\LAB6\text2.txt"
 if os.path.exists(path):
   os.remove(path)
 else:
