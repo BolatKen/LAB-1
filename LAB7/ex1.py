@@ -15,9 +15,7 @@ pygame.init()
 
 
 
-surface = pygame.Surface((200,200))
 screen = pygame.display.set_mode((700, 500))
-
 
 clock = pygame.image.load(r"C:\Users\PC\Desktop\Python\lab1\LAB7\img\mainclock.png")
 clock = pygame.transform.scale(clock, (700, 500))
@@ -39,7 +37,6 @@ while (running):
     screen.blit(arrow[1], (350 - arrow[1].get_width() / 2, 250 - arrow[1].get_height() / 2))
     pygame.display.update()
 
-    pygame.time.Clock().tick(60)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:

@@ -67,12 +67,3 @@ while(running):
             elif event.key == pygame.K_LEFT:
                 i = (i - 1)%8
                 switch_track()
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            print(event.pos)
-            if (event.pos[0] in [x for x in range(350, 390)]) and (event.pos[1] in [x for x in range(370, 420)]):
-                if(playing):
-                    pygame.mixer.music.pause()
-                    playing = False
-                else:
-                    pygame.mixer.music.unpause()
-                    playing = True
