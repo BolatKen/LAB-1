@@ -29,6 +29,9 @@ pen = None
 last_event = None
 
 
+f1 = pygame.font.Font(None, 36)
+text1 = f1.render("Q-mouse  W-rectengle  E-circle  R-eraser||Z-red X-green C-blue V-black", True, (150, 0, 0))
+screen.blit(text1, (10, 50))
 while running:
 	
 	
